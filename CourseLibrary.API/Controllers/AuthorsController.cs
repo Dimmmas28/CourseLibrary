@@ -191,7 +191,7 @@ namespace CourseLibrary.API.Controllers
             "application/vnd.marvin.authorforcreation+json")]
         [Consumes("application/json",
             "application/vnd.marvin.authorforcreation+json")]
-
+         
         public ActionResult<AuthorDto> CreateAuthor(AuthorForCreationDto author)
         {
             var authorEntity = _mapper.Map<Entities.Author>(author);
